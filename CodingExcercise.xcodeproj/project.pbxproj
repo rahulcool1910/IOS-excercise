@@ -49,6 +49,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		95517F722B011EA400232EB2 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9552DE532AFB9923001A021C /* PhotoReducer.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		9552DE362AFB98D3001A021C = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +81,7 @@
 				9552DE462AFB98D6001A021C /* Assets.xcassets */,
 				9552DE482AFB98D6001A021C /* Preview Content */,
 				95517F712B010ECA00232EB2 /* View */,
-				9552DE532AFB9923001A021C /* PhotoReducer.swift */,
+				95517F722B011EA400232EB2 /* Store */,
 			);
 			path = CodingExcercise;
 			sourceTree = "<group>";

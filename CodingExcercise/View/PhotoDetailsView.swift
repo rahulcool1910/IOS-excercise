@@ -13,16 +13,14 @@ struct PhotoDetailsView: View{
     @State private var title: String = ""
     @Environment(\.presentationMode) var presentationMode
     
-    
     let action: (_ id: Int, _ title: String) -> Void
     
     var body: some View{
-        
         VStack{
             TextField("title", text: $title)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.vertical, 5)
-                
+            
             AsyncImage(url: URL(string: photo.url)){ image in
                 image
                     .resizable()

@@ -17,7 +17,6 @@ struct PhotosListView: View {
         store.send(.updatePhotos(id, title))
     }
     var body: some View {
-        
         NavigationView{
             WithViewStore(self.store, observe: { $0 }) { viewStore in
                 VStack{
@@ -37,7 +36,7 @@ struct PhotosListView: View {
                         }
                     }
                 }
-                .navigationTitle("Albums")
+                .navigationTitle("Photos")
                 .onAppear(){
                     viewStore.send(.getPhotos)
                 }
