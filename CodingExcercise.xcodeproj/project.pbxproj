@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95517F702B010E8300232EB2 /* PhotoDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95517F6F2B010E8300232EB2 /* PhotoDetailsView.swift */; };
 		9552DE432AFB98D3001A021C /* CodingExcerciseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552DE422AFB98D3001A021C /* CodingExcerciseApp.swift */; };
 		9552DE452AFB98D3001A021C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552DE442AFB98D3001A021C /* ContentView.swift */; };
 		9552DE472AFB98D6001A021C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9552DE462AFB98D6001A021C /* Assets.xcassets */; };
 		9552DE4A2AFB98D6001A021C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9552DE492AFB98D6001A021C /* Preview Assets.xcassets */; };
+		9552DE522AFB98FE001A021C /* PhotosListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552DE512AFB98FE001A021C /* PhotosListView.swift */; };
+		9552DE542AFB9923001A021C /* PhotoReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9552DE532AFB9923001A021C /* PhotoReducer.swift */; };
+		9552DE562AFB99FB001A021C /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9552DE552AFB99FB001A021C /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95517F6F2B010E8300232EB2 /* PhotoDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsView.swift; sourceTree = "<group>"; };
 		9552DE3F2AFB98D3001A021C /* CodingExcercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingExcercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9552DE422AFB98D3001A021C /* CodingExcerciseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingExcerciseApp.swift; sourceTree = "<group>"; };
 		9552DE442AFB98D3001A021C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9552DE462AFB98D6001A021C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9552DE492AFB98D6001A021C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9552DE512AFB98FE001A021C /* PhotosListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosListView.swift; sourceTree = "<group>"; };
+		9552DE532AFB9923001A021C /* PhotoReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +33,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9552DE562AFB99FB001A021C /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95517F712B010ECA00232EB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9552DE512AFB98FE001A021C /* PhotosListView.swift */,
+				95517F6F2B010E8300232EB2 /* PhotoDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		9552DE362AFB98D3001A021C = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +72,8 @@
 				9552DE442AFB98D3001A021C /* ContentView.swift */,
 				9552DE462AFB98D6001A021C /* Assets.xcassets */,
 				9552DE482AFB98D6001A021C /* Preview Content */,
+				95517F712B010ECA00232EB2 /* View */,
+				9552DE532AFB9923001A021C /* PhotoReducer.swift */,
 			);
 			path = CodingExcercise;
 			sourceTree = "<group>";
@@ -83,6 +102,9 @@
 			dependencies = (
 			);
 			name = CodingExcercise;
+			packageProductDependencies = (
+				9552DE552AFB99FB001A021C /* ComposableArchitecture */,
+			);
 			productName = CodingExcercise;
 			productReference = 9552DE3F2AFB98D3001A021C /* CodingExcercise.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +133,9 @@
 				Base,
 			);
 			mainGroup = 9552DE362AFB98D3001A021C;
+			packageReferences = (
+				9552DE502AFB98E5001A021C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 9552DE402AFB98D3001A021C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95517F702B010E8300232EB2 /* PhotoDetailsView.swift in Sources */,
 				9552DE452AFB98D3001A021C /* ContentView.swift in Sources */,
 				9552DE432AFB98D3001A021C /* CodingExcerciseApp.swift in Sources */,
+				9552DE542AFB9923001A021C /* PhotoReducer.swift in Sources */,
+				9552DE522AFB98FE001A021C /* PhotosListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9552DE502AFB98E5001A021C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9552DE552AFB99FB001A021C /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9552DE502AFB98E5001A021C /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9552DE372AFB98D3001A021C /* Project object */;
 }
